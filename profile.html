@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillSync - Your Profile</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="background">
+        <div class="gradient-layer"></div>
+        <div class="shape shape1"></div>
+        <div class="shape shape2"></div>
+        <div class="shape shape3"></div>
+    </div>
+
+    <!-- User Background Picture -->
+    <div id="user-background" class="user-background"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">SkillSync</div>
+        <ul class="nav-links">
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#skills">Skill Test</a></li>
+            <li><a href="#network">Network</a></li>
+            <li><a href="#jobs">Jobs</a></li>
+            <li><a href="#settings">Settings</a></li>
+        </ul>
+    </nav>
+
+    <!-- Profile Display (Fixed to Top, LinkedIn Style) -->
+    <div class="profile-display">
+        <div class="profile-card">
+            <!-- Profile Header -->
+            <div class="profile-header">
+                <img id="display-pic" class="profile-pic" src="" alt="Profile Picture">
+                <div class="profile-info">
+                    <h1 id="display-name">Your Name</h1>
+                    <p id="display-bio"></p>
+                    <a id="display-github" href="#" target="_blank"></a>
+                </div>
+            </div>
+
+            <!-- Interests Section -->
+            <div class="section">
+                <h2>Interests</h2>
+                <div id="display-interests" class="tag-container"></div>
+            </div>
+
+            <!-- Companies Section -->
+            <div class="section">
+                <h2>Following Companies</h2>
+                <div id="display-companies" class="tag-container"></div>
+            </div>
+
+            <!-- Skills Section -->
+            <div class="section">
+                <h2>Skills</h2>
+                <div id="display-skills" class="tag-container"></div>
+                <p>Skill Level: <span id="display-skill-level"></span></p>
+            </div>
+
+            <!-- Skill Test Button -->
+            <button id="skill-test-btn" class="skill-test-btn">Take Skill Test</button>
+        </div>
+    </div>
+
+    <!-- Trends Section (Full-Width, Left-to-Right Scrolling) -->
+    <section class="trends-section">
+        <h2>Current Company Trends</h2>
+        <div id="trends-container" class="trends-container"></div>
+    </section>
+
+    <script src="profile.js"></script>
+</body>
+</html>
